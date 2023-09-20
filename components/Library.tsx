@@ -13,7 +13,7 @@ function Library() {
           <TbPlaylist size={26} className='text-neutral-400' />
           <p className='text-neutral-400 font-medium text-md'>Your Library</p>
         </div>
-        <AiOutlinePlus onClick={handleClickPlus} size={20} className="text-neutral-400 cursor-pointer hover:text-white transition"/>
+        <AiOutlinePlus onClick={handleClickPlus} size={20} className="text-neutral-400 cursor-pointer hover:text-white transition" />
       </div>
       <div className='flex flex-col gap-y-2 mt-4 px-3'>List of Song</div>
     </div>
