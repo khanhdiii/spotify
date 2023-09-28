@@ -2,6 +2,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+npm i stripe
+yarn add supabase@">=1.8.1" --save-dev
+npm i zustand
+npm i @supabase/auth-ui-react
+npm i @supabase/auth-ui-shared
+
 First, run the development server:
 
 ```bash
