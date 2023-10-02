@@ -7,6 +7,10 @@ yarn add supabase@">=1.8.1" --save-dev
 npm i zustand
 npm i @supabase/auth-ui-react
 npm i @supabase/auth-ui-shared
+npm i react-hot-toast
+npm i -D @types/uniqid
+npm i react-hook-form
+npm i uniqid
 
 First, run the development server:
 
