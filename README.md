@@ -11,6 +11,7 @@ npm i react-hot-toast
 npm i -D @types/uniqid
 npm i react-hook-form
 npm i uniqid
+npm i query-string
 
 First, run the development server:
 
