@@ -12,6 +12,8 @@ npm i -D @types/uniqid
 npm i react-hook-form
 npm i uniqid
 npm i query-string
+npm i @radix-ui/react-slider
+npm i use-sound
 
 First, run the development server:
 
