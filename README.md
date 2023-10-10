@@ -14,6 +14,10 @@ npm i uniqid
 npm i query-string
 npm i @radix-ui/react-slider
 npm i use-sound
+npm i react-spinners
+
+npm i @stripe/stripe-js
+npm i @supabase/supabase-js
 
 First, run the development server:
 
