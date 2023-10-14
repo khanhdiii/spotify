@@ -39,7 +39,7 @@ function AuthModal() {
     >
       <Auth
         supabaseClient={supabaseClient}
-        providers={['github', 'google', 'discord']}
+        providers={['github', 'google', 'discord', 'facebook']}
         magicLink={true}
         appearance={{
           theme: ThemeSupa,
