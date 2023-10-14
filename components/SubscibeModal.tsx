@@ -17,11 +17,11 @@ interface SubscribeModalProps {
 }
 
 const formatPrice = (price: Price) => {
-  const priceString = new Intl.NumberFormat('en-US', {
+  const priceString = new Intl.NumberFormat('vi-VN', {
     style: 'currency',
     currency: price.currency,
     minimumFractionDigits: 0,
-  }).format((price?.unit_amount || 0) / 100);
+  }).format(price?.unit_amount || 0);
 
   return priceString;
 };
