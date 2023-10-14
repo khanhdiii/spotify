@@ -14,7 +14,6 @@ function AccountContent() {
   const { isLoading, subscription, user } = useUser();
 
   const [loading, setLoading] = useState(false);
-  console.log({ isLoading, subscription, user });
 
   useEffect(() => {
     if (!isLoading && !user) {
