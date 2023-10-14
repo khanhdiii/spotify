@@ -24,11 +24,11 @@ function AuthModal() {
   };
 
   useEffect(() => {
-    if (session) {
+    if (session && isOpen) {
       router.refresh();
       onClose;
     }
-  }, [onClose, router, session]);
+  }, [isOpen, onClose, router, session]);
 
   return (
     <Modal
@@ -39,7 +39,7 @@ function AuthModal() {
     >
       <Auth
         supabaseClient={supabaseClient}
-        providers={['github']}
+        providers={['github', 'google', 'discord']}
         magicLink={true}
         appearance={{
           theme: ThemeSupa,
