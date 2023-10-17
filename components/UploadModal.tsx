@@ -14,6 +14,11 @@ import { useUser } from '@/hooks/useUser';
 import { useSupabaseClient } from '@supabase/auth-helpers-react';
 import { useRouter } from 'next/navigation';
 
+function normalizeFileName(fileName: any) {
+  // Remove special characters and spaces from filenames
+  return fileName.replace(/[^\w\s.]/gi, '');
+}
+
 function UploadModal() {
   const [isLoading, setIsLoading] = useState(false);
   const uploadModal = useUploadModal();
@@ -51,9 +56,10 @@ function UploadModal() {
       const uniqueID = uniqid();
 
       //Upload song
+      const normalizedTitle = normalizeFileName(values.title);
       const { data: songData, error: songError } = await supabaseClient.storage
         .from('songs')
-        .upload(`song-${values.title}-${uniqueID}`, songFile, {
+        .upload(`song-${normalizedTitle}-${uniqueID}`, songFile, {
           cacheControl: '3600',
           upsert: false,
         });
